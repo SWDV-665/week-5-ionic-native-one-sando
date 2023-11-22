@@ -37,7 +37,7 @@ export class GroceryPage {
     console.log('Sharing ', item, index)
     await Share.share({
       title: 'Item',
-      text: 'Name:' + item.name + 'Qauntity:' + item.quantity,
+      text: 'Name: ' + item.name + ' Quantity: ' + item.quantity,
     });
     this.presentToast(`${item.name} has been shared.`);
   }
